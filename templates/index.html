@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- SEO Meta Tags -->
+    <meta name="author" content="Kunal Goyal">
+
+    <!-- OG Meta Tags to improve the way the post looks when you share the page on LinkedIn, Facebook, Google+ -->
+	<meta property="og:site_name" content="" /> <!-- website name -->
+	<meta property="og:site" content="" /> <!-- website link -->
+	<meta property="og:title" content=""/> <!-- title shown in the actual shared post -->
+	<meta property="og:description" content="" /> <!-- description shown in the actual shared post -->
+	<meta property="og:image" content="" /> <!-- image link, make sure it's jpg -->
+	<meta property="og:url" content="" /> <!-- where do you want your post to link to -->
+	<meta property="og:type" content="article" />
+
+    <!-- Website Title -->
+    <title>Bank Lending Predictor</title>
+
+    <!-- Styles -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:500,700&display=swap&subset=latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600&display=swap&subset=latin-ext" rel="stylesheet">
+  	<link href="../static/css/styles.css" rel="stylesheet">
+    <link href="../static/css/fontawesome-all.css" rel="stylesheet">
+    <link href="../static/css/swiper.css" rel="stylesheet">
+    <link href="../static/css/magnific-popup.css" rel="stylesheet">
+	<link href="../static/css/bootstrap.css" rel="stylesheet">
+
+
+
+
+
+	<!-- Favicon  -->
+    <link rel="icon" href="../static/images/logo.svg')}}">
+</head>
+<body data-spy="scroll" data-target=".fixed-top">
+
+
+
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md navbar-light bg-dark navbar-custom fixed-top">
+        <!-- Text Logo - Use this if you don't have a graphic logo -->
+        <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Aria</a> -->
+        <!-- Image Logo -->
+        <a class="navbar-brand logo-image" href=#><img src="../static/images/logo.svg"		alt="alternative"></a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-awesome fas fa-bars"></span>
+            <span class="navbar-toggler-awesome fas fa-times"></span>
+        </button>
+        <!-- end of mobile menu toggle button -->
+
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#header">HOME <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#Predict">PREDICT</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="{{url_for('report')}}">VISUALIZE</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#Insights">INSIGHTS</a>
+                </li>
+
+            </ul>
+
+        </div>
+    </nav> <!-- end of navbar -->
+    <!-- end of navbar -->
+
+
+    <!-- Header -->
+    <header id="header" class="header">
+        <div class="header-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="text-container">
+                            <h1>Bank Lending <span id="js-rotating"> Analysis, Prediction, Visualization</span></h1>
+                            <p class="p-heading p-large"></p>
+                            <a class="btn-solid-lg page-scroll" href="#Predict">Predict Approval</a>
+							              <a class="btn-solid-lg page-scroll" href="{{url_for('report')}}">Visualize Data</a>
+
+                        </div>
+                    </div> <!-- end of col -->
+                </div> <!-- end of row -->
+            </div> <!-- end of container -->
+        </div> <!-- end of header-content -->
+    </header> <!-- end of header -->
+    <!-- end of header -->
+
+<!-- Description -->
+    <div id="Predict" class="cards-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+
+                    <!-- Card -->
+                    <div class="card">
+                        <span class="fa-stack">
+                            <span class="hexagon"></span>
+                            <i class="fas fa-binoculars fa-stack-1x"></i>
+                        </span>
+                        <div class="card-body">
+                            <h4 class="card-title">Feature Analysis</h4>
+                            <p>&#8226  We use the LIME Explainer to generate a list of explanations, reflecting the contribution of each feature to the prediction of a data sample. </p>
+                        </div>
+                    </div>
+                    <!-- end of card -->
+
+                    <!-- Card -->
+                    <div class="card">
+                        <span class="fa-stack">
+                            <span class="hexagon"></span>
+                            <i class="fas fa-list-alt fa-stack-1x"></i>
+                        </span>
+                        <div class="card-body">
+                            <h4 class="card-title">Data Visualization</h4>
+                            <p>&#8226 Used Tableau to visualize lending data across United States.</br>
+							&#8226 Used Sweetviz Library to get the distribution of each feature.</p>
+                        </div>
+                    </div>
+                    <!-- end of card -->
+
+                    <!-- Card -->
+                    <div class="card">
+                        <span class="fa-stack">
+                            <span class="hexagon"></span>
+                            <i class="fas fa-chart-pie fa-stack-1x"></i>
+                        </span>
+                        <div class="card-body">
+                            <h4 class="card-title">Approval Prediction</h4>
+                            <p>
+							&#8226 Get your loan approval chances by providing few necessary details. </br>
+              &#8226 Also receive local interpretability and determine which feature changes will have most impact on the prediction.
+            </p>
+                        </div>
+                    </div>
+                    <!-- end of card -->
+
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of cards-1 -->
+    <!-- end of description -->
+    <!-- Intro -->
+    <div >
+          <!-- Predict -->
+				<div class="container">
+
+				 <div class="row">
+                <div class="col-lg-6">
+                    <div class="text-container">
+                        <h3>Are you looking for a Loan? Know your chances of getting one by sparing out just a few secs to fill our form!</h3>
+                    </div>
+                </div> <!-- end of col -->
+                <div class="col-lg-6">
+
+                    <!-- Call Me Form -->
+                    <form id="callMeForm" data-toggle="validator" data-focus="false">
+                        <div class="form-group">
+
+							<a type="submit" class="form-control-submit-button" href="Individual"> PREDICT MY CHANCES</a>
+
+                        </div>
+
+
+                    </form>
+                    <!-- end of call me form -->
+
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    <!-- end of call me -->
+    </div> <!-- end of basic-1 -->
+    <!-- end of intro -->
+    <div id="Insights" class="cards-2">
+            <div class="container">
+                <div class="row">
+    			    <div class="card-body">
+
+                    <div class="col-lg-12">
+    				<div class="section-title">Insights</div>
+    				<h2>Get state-wise lending industry information<br>of United States:</h2>
+    				 <ul class="list-unstyled li-space-lg">
+                                <li class="media">
+                                    <i class="fas fa-square"></i>
+                                    <div class="media-body">Select the state about which you want to know the following information</div>
+                                </li>
+                                <li class="media">
+                                    <i class="fas fa-square"></i>
+                                    <div class="media-body">Loan to Income Ratio vs Grades graph shows the variation of Fully Paid and Defaulted loans based on the two parameters. It was observed that usually the ratio is high for lower grade loans and higher for Defaulted Loans across grades.</div>
+                                </li>
+    							<li class="media">
+                                    <i class="fas fa-square"></i>
+                                    <div class="media-body">Know the total amount of loans issued over the years. Both Fully Paid and Defaulted loans peaked near 2015.</br></div>
+                                </li>
+                                <li class="media">
+                                    <i class="fas fa-square"></i>
+                                    <div class="media-body">From the box plot, observe how the interest rates offered for loans vary for different grades. Usually, lower the grade, higher would be the interest rate offered by banks to cover their risk.  </div>
+                                </li>
+    							<li class="media">
+                                    <i class="fas fa-square"></i>
+                                    <div class="media-body">The graph of average interest rate vs loan amount shows how the defaulted loans always had a higher interest rate across the range of loan amount.</div>
+                                </li>
+                                <li class="media">
+                                    <i class="fas fa-square"></i>
+                                    <div class="media-body">Highest purposes of the disbursed loans for a particular US state chosen</div>
+                                </li>
+                            </ul>
+
+    				<center><iframe src="https://public.tableau.com/views/lendingclub_15949916461750/Dashboard1?:language=en&:showVizHome=no&:display_count=y&:origin=viz_share_link" width="1000" height="872" frameborder="0"></iframe></center>
+    				</div>
+                    </div> <!-- end of col -->
+                </div> <!-- end of row -->
+            </div> <!-- end of container -->
+        </div> <!-- end of cards-2 -->
+        <!-- end of services -->
+
+
+
+
+
+
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of counter -->
+    <!-- end of about -->
+
+    <!-- Footer -->
+
+
+
+
+    <!-- Scripts -->
+    <script src="../static/js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+	  <script src="../static/js/popper.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+    <script src="../static/js/bootstrap.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+    <script src="../static/js/jquery.easing.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+    <script src="../static/js/jquery.magnific-popup.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+    <script src="../static/js/morphext.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+    <script src="../static/js/isotope.pkgd.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+    <script src="../static/js/validator.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+	  <script src="../static/js/scripts.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+</body>
+</html>
